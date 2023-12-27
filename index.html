@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html Form</title>
+    <style type="text/css">
+        label{
+            width:100px;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <form action="">
+        <fieldset>
+            <legend> Your address </legend>
+            <div>
+                <label for="Firstname">First name</label>
+                <input type="text" id="Firstname" required>
+            </div> <br>
+            <div>
+                <label for="Lastname">Last name</label>
+                <input type="text" id="Lastname" required>
+            </div> <br>
+            <div>
+                <label for="Street">Street</label>
+                <input type="text" id="Street" required>
+            </div> <br>
+            <div>
+                <label for="City">City</label>
+                <input type="text" id="City" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional details</legend>
+            <div>
+                <label for="Biography">Biography</label>
+                <textarea id="Biography" cols="30" rows="10" required></textarea>
+            </div> <br>
+            <div>
+                <label for="Image">Image</label>
+                <input type="file" id="Image" required>
+            </div> <br>
+            <div>
+                <label for="Age">Age Group</label>
+                <input type="number" placeholder="0 to 9 Years" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Interests </legend>
+            <div>
+                <label for="Hobbies">Hobbies</label>
+                <select name="Hobbies" id="Hobbies" multiple required>
+                    <option value="playing soccer">Playing soccer</option>
+                    <option value="dancing">Dancing</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="watching movies">Watching movies</option>
+        </select>
+        </div> <br>
+        <div>
+            <label for="">Favourite car?</label>
+            <select name="" id="" input type="text" required>
+                <option value="volvo">Volvo</option>
+                <option value="ford">Ford</option>
+                <option value="honda">Honda</option>
+                <option value="siena">Siena</option>
+                <option value="porshe">Porshe</option>
+                <option value="bentley">Bentley</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="lexsus">Lexsus</option>
+                <option value="benz">Benz</option>
+                <option value="tesla">Tesla</option>
+             </select>
+        </div> <br>
+        <div>
+            <label for="transport">Favourite public transport?</label>
+            <select name="" id="transport" multiple required>
+                <optgroup label="Ground">
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                </optgroup> <br>
+                <optgroup label="Water">
+                    <option value="canoes">Canoes</option>
+                    <option value="boats">Engine boats</option>
+                    <option value="ferries">Ferries</option>
+                </optgroup> <br>
+                <optgroup label="Air">
+                    <option value="airplane">Airplane</option>
+                </optgroup>
+            </select>
+        </div>
+        </fieldset> <br>
+        <input type="submit"">
+    </form>
+</main>
+</body>
+</html>
